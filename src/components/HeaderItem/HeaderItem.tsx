@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeaderItem.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import IheaderItem from '../../interfaces/headerItem';
 
 const HeaderItem: React.FunctionComponent<IheaderItem> = (
@@ -8,7 +8,12 @@ const HeaderItem: React.FunctionComponent<IheaderItem> = (
 ) => {
   return (
     <li className="nav-item">
-      <Link to={props.route}>{props.text}</Link>
+      <NavLink
+        className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+        to={props.route}
+      >
+        {props.text}
+      </NavLink>
     </li>
   );
 };

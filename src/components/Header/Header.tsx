@@ -4,8 +4,14 @@ import HeaderItem from '../HeaderItem/HeaderItem';
 
 const Header: React.FunctionComponent<{}> = () => {
   return (
-    <header className="header">
+    <header className="main-header">
       <div className="container">
+        <img
+          src="https://codecta.com/wp-content/uploads/2021/01/Codeta-Logo_white-1.png"
+          width="170"
+          height="95"
+          alt="Flexbox.ninja"
+        />
         <nav className="navbar">
           <ul className="navbar-nav"></ul>
           <HeaderItem text="Home" route="/" />

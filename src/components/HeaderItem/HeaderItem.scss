@@ -2,3 +2,14 @@
   display: inline;
   margin: 10px;
 }
+
+.nav-item a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.nav-item a.active {
+  color: #a2314d;
+  background: #009eb8;
+}
